@@ -1,0 +1,14 @@
+type: Vue
+articles: [{
+    title: 'vue中Axios的封装和API接口的管理',
+    url: 'https://juejin.im/post/5b55c118f265da0f6f1aa354'
+},{
+    title: '160行代码仿Vue实现极简双向绑定',
+    url: 'https://juejin.im/post/5b2df500f265da597c772b0d'
+},{
+    title: '手摸手，带你用Vue撸后台系列文章',
+    url: 'https://segmentfault.com/a/1190000010043013'
+},{
+    title: '详解vue生命周期',
+    url: 'https://segmentfault.com/a/1190000011381906'
+}]

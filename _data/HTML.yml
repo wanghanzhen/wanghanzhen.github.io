@@ -1,0 +1,5 @@
+type: HTML
+articles: [{
+    title: 'HTML语义化',
+    url: 'http://justineo.github.io/slideshows/semantic-html/#/'
+}]

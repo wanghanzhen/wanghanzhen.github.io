@@ -1,0 +1,8 @@
+type: other
+articles: [{
+    title: 'git简明指南',
+    url: 'https://www.css88.com/doc/git-guide/'
+}, {
+    title: '大前端时代你的vscode插件',
+    url: 'https://mp.weixin.qq.com/s/AFqHIqss-I8Zd7uA-1oGBg'
+}]

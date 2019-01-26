@@ -1,0 +1,5 @@
+type: safe
+articles: [{
+    title: '前端安全知识',
+    url: 'https://juejin.im/post/59dc2b7a6fb9a0451869ae3a'
+}]

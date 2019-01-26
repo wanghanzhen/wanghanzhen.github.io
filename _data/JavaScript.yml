@@ -1,0 +1,29 @@
+type: JavaScript
+articles: [{
+    title: 'hey，你的Event Loop',
+    url: 'https://juejin.im/post/5b63b4cb6fb9a04fb4017f5a'
+},{
+    title: '一篇文章搞定 javascript 正则表达式',
+    url: 'https://juejin.im/post/5b6adc7ee51d4534b8587560'
+},{
+    title: 'JS 中可以提升幸福度的小技巧',
+    url: 'https://juejin.im/post/5b51e5d3f265da0f4861143c'
+},{
+    title: 'hey，你的Promise',
+    url: 'https://juejin.im/post/5b58300b6fb9a04fea58a27e'
+},{
+    title: '摆脱令人抓狂的ESlint 语法检测配置说明',
+    url: 'https://segmentfault.com/a/1190000008742240'
+},{
+    title: 'webpack4-用之初体验，一起敲它十一遍',
+    url: 'https://juejin.im/post/5adea0106fb9a07a9d6ff6de'
+},{
+    title: 'js隐式转换',
+    url: 'https://juejin.im/post/5bc5c752f265da0a9a399a62'
+},{
+    title: '前端模块化详解',
+    url: 'https://juejin.im/post/5c17ad756fb9a049ff4e0a62'
+},{
+    title: '前端中的IOC',
+    url: 'https://juejin.im/post/5c2c47dcf265da616d544a53'
+}]

@@ -1,0 +1,73 @@
+---
+title: Collect
+layout: default
+description: keep hungry keep foolish
+header-img: "img/post-bg-web.jpg"
+---
+
+<!-- 
+Credits: this page shamelessly borrowed a lot from:
+https://github.com/kitian616/jekyll-TeXt-theme
+-->
+<!-- Page Header -->
+{% include intro-header.html type='page' short=true %}
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<!-- Tags (as filter) -->
+			<div id='tag_cloud' class="tags tags-sup js-tags">
+                {%- assign type_list = "JavaScript, HTML, CSS, Vue, React, mini, algorithm, browser, safe, interview, other" | split: ', ' -%}
+                {%- assign number = 0 -%}
+                {% for type in type_list %}
+                    {%- assign item = site.data[type] -%}
+                    {%- assign number = number | plus: item.articles.size -%}
+				{% endfor %}
+				<a class="tag-button--all" data-encode="">
+					Show All
+					<sup>{{ number }}</sup>
+                </a>
+                {% capture tags %}
+				{% for type in type_list %}
+                    {%- assign item = site.data[type] -%}
+				<a data-sort="{{ number | minus: item.articles.size | prepend: '0000' | slice: -4, 4 }}"
+					data-encode="{{ item.type | strip | url_encode }}"
+					class="tag-button"
+					title="{{ type }}" rel="{{ item.articles.size }}">
+					{{ type }}
+					<sup>{{ item.articles.size }}</sup>
+				</a>
+                {% endfor %}
+                {% endcapture %}
+                {{ tags | split:'</a>' | sort | join:'</a>' }}
+			</div>
+
+            <!-- Article List -->
+			<div class="mini-post-list js-result d-none">
+                {% for type in type_list %}
+                    <section>
+                        <span class="fa listing-seperator">
+                            <span class="tag-text">{{ type }}</span>
+                        </span>
+                        {%- assign item = site.data[type] -%}
+                        {% for article in item.articles %}
+                            <div class="post-preview item" data-type="{{ type }}">
+                                <a href="{{ article.url }}" target="_blank">
+                                    <h2 class="post-title">
+                                        {{ article.title }}
+                                    </h2>
+                                    {% if article.subtitle %}
+                                    <h3 class="post-subtitle">
+                                        {{ article.subtitle }}
+                                    </h3>
+                                    {% endif %}
+                                </a>
+                                <hr>
+                            </div>
+                        {% endfor %}
+                    </section>
+				{% endfor %}
+		</div>
+	</div>
+</div>
